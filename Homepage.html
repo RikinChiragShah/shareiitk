@@ -1,0 +1,467 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.98.0">
+    <title>Connect | Share IIT Kanpur</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=lato">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#712cf9">
+
+
+    <style>
+      .textstyle{
+        font-family: "lato";
+      }
+      .icon-position{
+        text-align:center;
+        padding-top: 30px
+      }
+      .navigation{
+        padding-left: 200px;
+      }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+      #share{
+        color: rgb(33, 187, 182);
+      }
+      #button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#C{
+    transform: rotate(330deg);
+}
+.contact{
+  padding: 0 200px 0 200px
+}
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+        <img class = "navbar-brand"src="https://static.wixstatic.com/media/4fbebc_8905fb515da7421782787c0a2330f26f~mv2.png/v1/fill/w_139,h_135,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/ShARE_IITB_Logo-removebg_edited.png" alt="ShARE_IITB_Logo-removebg_edited.png" style="width:111px;height:108px;object-fit:cover" srcset="https://static.wixstatic.com/media/4fbebc_8905fb515da7421782787c0a2330f26f~mv2.png/v1/fill/w_139,h_135,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/ShARE_IITB_Logo-removebg_edited.png" fetchpriority="high">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <span id="share" style="font-family:montserrat,sans-serif;">ShARE IIT Kanpur <br> CONNECT</span>
+      <div class="collapse navbar-collapse navigation" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About ShARE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">What We Do</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+
+        </ul>
+          <button id="button"class="btn btn-outline-success">Join Us</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="bd-placeholder-img" width="100%" height="620px" src="pic1.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/>
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1 class="icon-position">NETWORKING</h1>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="bd-placeholder-img" width="100%" height="620px" src="pic5.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>DO WELL, DO GOOD</h1>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="bd-placeholder-img" width="100%" height="620px" src="pic6.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/>
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>LEADERSHIP</h1>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row ">
+      <div class="col-lg-4 icon-position">
+        <img class="bd-placeholder-img rounded-circle" width="70" height="70" src="https://static.wixstatic.com/media/4fbebc_cae1183388ca48f9a3e336d22df6a2de~mv2.png/v1/fill/w_140,h_103,al_c,lg_1,q_85,enc_auto/Screenshot_2021-09-28_173043-removebg-preview.png" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
+
+        <h4 class="fw-normal">Leadership</h4>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4 icon-position">
+        <img class="bd-placeholder-img rounded-circle" width="70" height="70" src="https://static.wixstatic.com/media/4fbebc_1154bf5279c1482e9e698736c0d7dba2~mv2.png/v1/fill/w_129,h_93,al_c,lg_1,q_85,enc_auto/Screenshot_2021-09-28_173030-removebg-preview.png" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
+
+        <h4 class="fw-normal">Corporate Skills</h4>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4 icon-position">
+        <img class="bd-placeholder-img rounded-circle" width="70" height="70" src="https://static.wixstatic.com/media/4fbebc_a9ef9cefba3d406dad72c6999edc8aca~mv2.png/v1/fill/w_129,h_93,al_c,lg_1,q_85,enc_auto/Screenshot_2021-09-28_173056-removebg-preview.png" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/></img>
+
+        <h4 class="fw-normal">Openness to the world</h4>
+
+      </div><!-- /.col-lg-4 -->
+
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1 textstyle">Welcome to the ShARE IIT Kanpur website.</h2>
+        <p class="lead">Founded in 2011, ShARE IIT Kanpur is a student chapter of the ShARE Global Leadership Programme offered to students from top universities across the world, who have the potential to shape a more sustainable and inclusive world while doing good and doing well for society.
+
+            We're now 10 years old since inception! To celebrate this we bring to you our official website 'CONNECT' - a one-stop destination to know anything and everything about ShARE IIT Kanpur.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="pic2.jpg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1 icon-position">What is ShARE?</h2>
+        <p class="lead">ShARE is an innovative start-up at the crossroads of education and consulting with ‘do well, do good’ as its mission. It runs a global leadership programme that aims to create a new generation of future leaders.
+
+            ShARE aims to transform the way corporate organizations conventionally work and create a new generation of leaders and changemakers who will do well for themselves and do good for the world.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="pic4.jpg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+<!--Section: Contact v.2-->
+<section class="mb-4 contact">
+  <div class="featurette-heading fw-normal lh-1 textstyle icon-position">ShARExperiences:Testimonials of Our Alumni</div>
+  <!-- Carousel wrapper -->
+<div id="carouselExampleControls" class="carousel slide text-center carousel-dark" data-mdb-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="rounded-circle shadow-1-strong mb-4"
+        src="singhal.webp" alt="avatar"
+        style="width: 150px;" />
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-8">
+          <h5 class="mb-3">Kshitiz Singhal</h5>
+          <p>Former President, ShARE iitk
+            Associate Consultant at Mastercard
+            IIM Ahmedabad Admit</p>
+          <p class="text-muted">
+            <i class="fas fa-quote-left pe-2"></i>
+            ShARE was a platform that helped me develop skills much needed in the corporate world.
+The opportunity helped me nurture the leader inside me and the exposure to real-life case studies and projects gave me hands-on experience which helped me in my placements.
+          </p>
+        </div>
+      </div>
+      <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+        <li><i class="fas fa-star fa-sm"></i></li>
+        <li><i class="fas fa-star fa-sm"></i></li>
+        <li><i class="fas fa-star fa-sm"></i></li>
+        <li><i class="fas fa-star fa-sm"></i></li>
+        <li><i class="far fa-star fa-sm"></i></li>
+      </ul>
+    </div>
+    <div class="carousel-item">
+      <img class="rounded-circle shadow-1-strong mb-4"
+        src="savla.webp" alt="avatar"
+        style="width: 150px;" />
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-8">
+          <h5 class="mb-3">Raj Savla</h5>
+          <p>Former President, ShARE iitk
+
+            Product Manager at Axis Bank</p>
+          <p class="text-muted">
+            <i class="fas fa-quote-left pe-2"></i>
+            ShARE has given me access to invaluable resources in terms of content as well as people when we talk about its global presence in several country's top universities.
+            The perspective change I obtained as a part of ShARE has been phenomenal to my professional career.
+          </p>
+        </div>
+      </div>
+      <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+        <li><i class="fas fa-star fa-sm"></i></li>
+        <li><i class="fas fa-star fa-sm"></i></li>
+        <li><i class="fas fa-star fa-sm"></i></li>
+        <li><i class="fas fa-star fa-sm"></i></li>
+        <li><i class="far fa-star fa-sm"></i></li>
+      </ul>
+    </div>
+    <div class="carousel-item">
+      <img class="rounded-circle shadow-1-strong mb-4"
+        src="biyani.jpg" alt="avatar" style="width: 150px;" />
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-8">
+          <h5 class="mb-3">Siddhesh Biyani</h5>
+          <p>Former VP, ShARE iitk Incoming Associate at L.E.K. Consulting</p>
+          <p class="text-muted">
+            <i class="fas fa-quote-left pe-2"></i>
+            ShARE has provided me with crucial exposure and skills that have helped me gain an edge in every facet of life
+Needless to say, the DWDG ideology has to be the motto of the future, and that's what ShARE is doing, creating the future!
+          </p>
+        </div>
+      </div>
+      <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
+        <li><i class="fas fa-star fa-sm"></i></li>
+        <li><i class="fas fa-star fa-sm"></i></li>
+        <li><i class="fas fa-star fa-sm"></i></li>
+        <li><i class="fas fa-star fa-sm"></i></li>
+        <li><i class="far fa-star fa-sm"></i></li>
+      </ul>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls"
+    data-mdb-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls"
+    data-mdb-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Carousel wrapper -->
+
+  <!--Section heading-->
+  <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+  <!--Section description-->
+  <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+      a matter of hours to help you.</p>
+
+  <div class="row">
+
+      <!--Grid column-->
+      <div class="col-md-9 mb-md-0 mb-5">
+          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+              <!--Grid row-->
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input placeholder="Your Name" type="text" id="name" name="name" class="form-control">
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input placeholder="Your Email"type="text" id="email" name="email" class="form-control">
+                          <label for="email" class=""> &nbsp;</label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="md-form mb-0">
+                          <input placeholder="Your Subject"type="text" id="subject" name="subject" class="form-control">
+                          <label for="subject" class=""> &nbsp;</label>
+                      </div>
+                  </div>
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-12">
+
+                      <div class="md-form">
+                          <textarea placeholder="Your Message"type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                          <label for="message"> &nbsp;</label>
+                      </div>
+
+                  </div>
+              </div>
+              <!--Grid row-->
+
+          </form>
+
+          <div class="text-center text-md-left">
+              <a class="btn btn-primary" class="icon-position" onclick="document.getElementById('contact-form').submit();">Send</a>
+          </div>
+          <div class="status"></div>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-md-3 text-center">
+          <ul class="list-unstyled mb-0">
+              <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                  <p>Indian Institute of Technology <br>
+                    Kalyanpur <br>
+                    Kanpur-208016 <br>
+                    INDIA</p>
+              </li>
+
+              <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                  <p>Tel: 0512-259 0151</p>
+              </li>
+
+              <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                  <p>doiitk@iitk.in</p>
+              </li>
+          </ul>
+      </div>
+      <!--Grid column-->
+
+  </div>
+
+</section>
+<!--Section: Contact v.2-->
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p><a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+
+
+    <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+
+  </body>
+</html>
